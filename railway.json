@@ -5,7 +5,7 @@
     "buildCommand": "pnpm run build:web"
   },
   "deploy": {
-    "startCommand": "pnpm run android",
+    "startCommand": "pnpm run serve:web",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
