@@ -5,7 +5,7 @@
     "buildCommand": "pnpm run build:web"
   },
   "deploy": {
-    "startCommand": "pnpm run serve:web",
+    "startCommand": "pnpm run web",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
