@@ -12,7 +12,7 @@ export function ProfileHeader({ avatar, name, email, onPress, editable = false }
     <GradientCard contentStyle={styles.headerCard}>
       <TouchableOpacity onPress={onPress} activeOpacity={editable ? 0.7 : 1}>
         {avatar ? (
-          <Image source={{ uri: avatar }} style={styles.avatar} />
+          <Image source={{ uri: avatar }} style={styles.avatar} resizeMode="cover" />
         ) : (
           <View style={[styles.avatar, styles.avatarPlaceholder]}>
             <MaterialIcons name="person" size={40} color={colors.white} />

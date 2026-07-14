@@ -22,7 +22,7 @@ export function AvatarPicker({ imageUri, onImagePicked }) {
   return (
     <TouchableOpacity style={styles.avatarPicker} onPress={handlePickImage}>
       {imageUri ? (
-        <Image source={{ uri: imageUri }} style={styles.avatar} />
+        <Image source={{ uri: imageUri }} style={styles.avatar} resizeMode="cover" />
       ) : (
         <View style={styles.avatarPlaceholder}>
           <MaterialIcons name="add-a-photo" size={28} color={colors.primary} />
